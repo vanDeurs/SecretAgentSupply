@@ -1,0 +1,180 @@
+/* Global */
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    height: 100%;
+    width: 100%;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    font-family: 'Open Sans', serif;
+    margin: 0;
+}
+
+.header-top, .header-main, header nav,  .main, footer {
+    padding: 0 15%;
+    margin: 0 auto;
+}
+
+
+/* HEADER */
+
+header {
+    height: 525px;
+}
+
+/* HEADER TOP */
+
+.header-top {
+    display: flex;
+    position: relative;
+    top: 0;
+    background: #000;
+    color: #fff;
+    height: 75px;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.header-top img, h3 {
+    display: inline-block;
+}
+
+.header-top img {
+    width: 5%;
+    height: auto;
+    padding-right: 5%;
+}
+
+/* HEADER MAIN */
+
+.header-main {
+    height: 400px;
+    background: url('/resources/pictures/moto.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+}
+
+/* HEADER ARRIVAL */
+
+.new-arrival {
+    height: 45%;
+    width: 45%;
+    background: #000;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 400;
+    border: 1px solid rgba(255,255,255,0.5);
+    border-radius: 10px;
+    text-align: left;
+    padding-left: 2%;
+}
+
+.new-arrival h2 {
+    font-weight: 600;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2.4rem;
+    line-height: 45px;
+    letter-spacing: 3px;
+} 
+
+.new-arrival h6 {
+    font-weight: 400;
+    position: relative;
+    top: 27%;
+    transform: translateY(-50%);
+}
+
+/* HEADER NAV */
+
+header nav {
+    height: 50px;
+    margin: 0 auto;
+    background: #c40714;
+}
+
+header nav ul{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+header nav ul li a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+    text-shadow: -1px 0 black, 0 1.5px black, 1px 1.5px black, 0 -1px black;
+    padding: 8.5px 6px;
+    border-radius: 10px;
+    transition: .2s ease-in-out;
+}
+
+header nav ul li a:hover {
+    background-color: #fff;
+    text-shadow: -1px 0 #c40714, 0 1.5px #c40714, 1px 1.5px #c40714, 0 -1px #c40714;
+}
+
+/* MAIN PART PAGE AND PRODUCTS */
+
+.main {
+    border: 3px solid yellow;
+    height: 100%;
+    margin-top: 25px;
+}
+
+/* PRODUCTS */
+
+.products {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    flex-direction: row;
+    height: 400px;
+}
+
+.product {
+    height: 275px;
+    width: 275px;
+    border: 3px solid black;
+    padding: 10px 25px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 275px;
+}
+
+.product img {
+    height: 75%;
+    width: auto;
+    border: 1px solid black;
+}
+
+
+.product p {
+    font-size: 1.5rem;
+}
+
+
+
+
+
