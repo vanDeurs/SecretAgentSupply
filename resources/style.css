@@ -17,7 +17,7 @@ html, body {
     margin: 0;
 }
 
-.header-top, .header-main, header nav,  .main, footer {
+.header-top, .information, .header-main, header nav,  .main, footer {
     padding: 0 15%;
     margin: 0 auto;
 }
@@ -33,7 +33,6 @@ header {
 
 .header-top {
     display: flex;
-    position: relative;
     top: 0;
     background: #000;
     color: #fff;
@@ -47,8 +46,13 @@ header {
     display: inline-block;
 }
 
+.header-top h3 {
+    font-size: 1.5rem;
+    min-width: 150px;
+}
+
 .header-top img {
-    width: 5%;
+    width: 50px;
     height: auto;
     padding-right: 5%;
 }
@@ -68,8 +72,10 @@ header {
 /* HEADER ARRIVAL */
 
 .new-arrival {
-    height: 45%;
-    width: 45%;
+    height: 200px;
+    width: 550px;
+    min-height: 80px;
+    min-width: 300px;
     background: #000;
     color: #fff;
     text-transform: uppercase;
@@ -136,7 +142,6 @@ header nav ul li a:hover {
 
 .main {
     border: 3px solid yellow;
-    height: 100%;
     margin-top: 25px;
 }
 
@@ -144,37 +149,86 @@ header nav ul li a:hover {
 
 .products {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: baseline;
     flex-wrap: wrap;
     flex-direction: row;
-    height: 400px;
 }
 
 .product {
+    border: 3px solid black;
     height: 275px;
     width: 275px;
-    border: 3px solid black;
-    padding: 10px 25px;
     align-items: center;
     justify-content: center;
     display: flex;
     flex-direction: column;
-    flex-basis: 275px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .product img {
-    height: 75%;
-    width: auto;
-    border: 1px solid black;
+    height: 50%;
+    width: 50%;
+    margin-bottom: 0;
+    margin-top: 16%;
 }
 
 
 .product p {
+    height: 30%;
+    background: #000;
+    color: #fff;
+    width: 100%;
+    margin-top: 10%;
+    text-align: center;
+    padding-top: 7%;
     font-size: 1.5rem;
+    
 }
 
 
+/* INFORMATION */
 
+.hope {
+    border: 3px solid green;
+}
 
+.information {
+    height: 120px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.information .location, .hours {
+    height: 60px;
+    width: 325px;
+    background: #000;
+    color: #fff;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    border: 2px solid #333;
+    margin: 3% auto;
+}
+
+.information .hours {
+    margin-left: 15px;
+}
+
+footer {
+    height: 50px;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #000;
+    color: #fff;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    margin-top: 25px;
+}
 
